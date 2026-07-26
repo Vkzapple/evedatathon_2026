@@ -1,0 +1,84 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VSCode
+.vscode/
+
+# Claude
+.claude/
+claude.md
+
+# =========================
+# Logs
+# =========================
+*.log
+*.txt
+
+# =========================
+# Model Outputs
+# =========================
+*.pkl
+*.pickle
+*.joblib
+*.model
+*.cbm
+*.bin
+*.h5
+*.keras
+*.pt
+*.pth
+*.onnx
+
+# =========================
+# Prediction Files
+# =========================
+pred_*.npy
+oof_*.npy
+*.npz
+
+# =========================
+# Cache
+# =========================
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+catboost_info/
+lightgbm_info/
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Secrets
+# =========================
+.env
+.env.*
+*.env
+
+# =========================
+train.csv
+test.csv
+sample_submission.csv
+submission.csv
+leak_train.csv
+leak_test.csv
+
