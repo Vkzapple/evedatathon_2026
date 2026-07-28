@@ -13,7 +13,9 @@ UNITS = {
 TENS = {'twenty': 20, 'thirty': 30, 'forty': 40, 'fifty': 50,
         'sixty': 60, 'seventy': 70, 'eighty': 80, 'ninety': 90}
 SCALES = {'hundred': 100, 'thousand': 1000, 'million': 1000000}
-NUMWORD = r'(?:zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred|thousand|million|and|[-\s,])+'
+# longest alternatives first: regex alternation is first-match, so 'nineteen'
+# must precede 'nine' or "nineteen thousand" parses as just "nine".
+NUMWORD = r'(?:seventeen|thirteen|fourteen|eighteen|nineteen|seventy|sixteen|fifteen|hundred|thousand|million|eleven|twelve|twenty|thirty|eighty|ninety|forty|fifty|sixty|three|seven|eight|zero|four|five|nine|one|two|six|ten|and|[-\s,])+'
 
 
 def words_to_num(text: str) -> float:
